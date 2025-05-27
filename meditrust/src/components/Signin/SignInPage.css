@@ -1,0 +1,82 @@
+/* src/pages/SignIn.css */
+.signin-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px); /* Adjust based on header height */
+    padding: 40px 20px; /* Add some padding */
+    background-color: #f8f9fa; /* Light background for the page */
+  }
+  
+  .signin-container {
+    background-color: #ffffff;
+    padding: 40px 50px; /* More padding inside the card */
+    border-radius: 16px; /* More pronounced rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    width: 100%;
+    max-width: 450px; /* Limit the width of the sign-in box */
+    text-align: center;
+  }
+  
+  .signin-container h2 {
+    font-size: 1.8rem; /* Larger title */
+    font-weight: 700; /* Bolder */
+    margin-bottom: 15px; /* Space below title */
+    color: #333;
+  }
+  
+  .signin-container .subtitle {
+    font-size: 0.95rem;
+    color: #6c757d; /* Muted subtitle color */
+    margin-bottom: 35px; /* More space below subtitle */
+  }
+  
+  .signin-form .form-group {
+    margin-bottom: 25px; /* Space between form groups */
+    text-align: left; /* Align labels left */
+  }
+  
+  .signin-form label {
+    display: block; /* Label on its own line */
+    margin-bottom: 8px;
+    font-weight: 500; /* Medium weight label */
+    font-size: 0.9rem;
+    color: #495057;
+  }
+  
+  .signin-form input[type="email"],
+  .signin-form input[type="password"] {
+    width: 100%;
+    padding: 12px 15px; /* Comfortable padding */
+    border: 1px solid #dee2e6; /* Subtle border */
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+    background-color: #f8f9fa; /* Very light background for inputs */
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .signin-form input[type="email"]:focus,
+  .signin-form input[type="password"]:focus {
+    outline: none;
+    border-color: #80bdff; /* Highlight border on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Subtle glow on focus */
+  }
+  
+  .signin-form .login-button {
+    width: 100%; /* Full width button */
+    background-color: #212529; /* Dark button */
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-top: 10px; /* Add some space above the button */
+  }
+  
+  .signin-form .login-button:hover {
+    background-color: #343a40; /* Slightly lighter on hover */
+  }

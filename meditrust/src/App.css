@@ -1,0 +1,27 @@
+/* src/App.css */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1; /* Allows the main content to fill available space */
+}
+
+/* Optional title style if you uncomment it in App.js */
+.page-title {
+    font-size: 1.5rem;
+    color: #adb5bd; /* Lighter grey color */
+    text-align: center; /* Or align left as needed */
+    margin: 20px 0 0 30px; /* Adjust positioning */
+    font-weight: 300; /* Lighter weight */
+}
+
+/* Adjust title position on smaller screens if needed */
+@media (max-width: 768px) {
+    .page-title {
+        text-align: center;
+        margin: 15px 0 0 0;
+    }
+}

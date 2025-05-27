@@ -1,0 +1,107 @@
+/* src/components/SignUpForm.css */
+.signup-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px; /* Add padding around the card */
+  }
+  
+  .signup-card {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px; /* More rounded corners like the image */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+    max-width: 450px; /* Max width for the form */
+    width: 100%; /* Responsive width */
+    text-align: center; /* Center title and subtitle */
+  }
+  
+  .signup-card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 600; /* Slightly bolder */
+    color: #333;
+  }
+  
+  .signup-card .subtitle {
+    margin-bottom: 30px;
+    color: #6c757d; /* Grey color for subtitle */
+    font-size: 0.95rem;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Align labels and inputs left */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #495057;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #f0e0e0; /* Very light pinkish border */
+    border-radius: 5px;
+    background-color: #fffafa; /* Very light pinkish/beige background */
+    font-size: 1rem;
+    transition: border-color 0.2s ease-in-out;
+    box-sizing: border-box; /* Ensure padding doesn't increase size */
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #f0a0a0; /* Slightly darker pink on focus */
+    box-shadow: 0 0 0 2px rgba(240, 160, 160, 0.2);
+  }
+  
+  .create-account-button {
+    padding: 12px 25px;
+    background-color: #343a40; /* Same dark as Sign In */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+    margin-top: 10px; /* Space above the button */
+    margin-bottom: 20px; /* Space below the button */
+  }
+  
+  .create-account-button:hover {
+    background-color: #23272b; /* Darker hover */
+  }
+  
+  .login-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .login-link a {
+    color: #007bff; /* Standard link color */
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments for the form */
+  @media (max-width: 480px) {
+    .signup-card {
+      padding: 25px 20px;
+    }
+  
+    .signup-card h2 {
+        font-size: 1.6rem;
+    }
+  }

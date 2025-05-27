@@ -1,0 +1,152 @@
+/* src/components/Header.css */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: relative; /* Needed for absolute positioning of mobile menu */
+}
+
+/* --- Logo Styles --- */
+.logo-container {
+  /* If using text logo */
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.logo-placeholder {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    color: #d9534f; /* Reddish color similar to image */
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.logo-icon {
+    font-size: 1.8rem; /* Larger icon */
+    line-height: 1;
+    /* If you have a specific icon image/svg, style it here */
+}
+
+.logo-image {
+  height: 40px; /* Adjust as needed */
+}
+
+/* --- Navigation Links --- */
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center; /* Align links vertically */
+}
+
+.nav-links li {
+  margin-left: 25px; /* Spacing between nav items */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500; /* Medium weight */
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #007bff; /* Example hover color */
+}
+
+/* --- Buttons --- */
+.signin-button {
+  padding: 10px 20px;
+  background-color: #343a40; /* Dark background */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease-in-out;
+  margin-left: 25px; /* Space from nav links */
+}
+
+.signin-button:hover {
+  background-color: #23272b; /* Slightly darker on hover */
+}
+
+.mobile-signin {
+    display: none; /* Hidden by default */
+    width: calc(100% - 40px); /* Full width minus padding */
+    margin: 15px 20px 20px 20px; /* Add margin for spacing in mobile menu */
+    text-align: center;
+}
+
+
+/* --- Hamburger Menu --- */
+.hamburger-menu {
+  display: none; /* Hidden on desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px; /* Add padding for easier clicking */
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide desktop links */
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Position below the header */
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 10;
+  }
+
+  .navigation.open .nav-links {
+    display: flex; /* Show links when mobile menu is open */
+  }
+
+  .nav-links li {
+    margin: 10px 20px; /* Adjust spacing for vertical layout */
+    width: calc(100% - 40px); /* Ensure links take width */
+    text-align: left;
+  }
+
+  .nav-links a {
+     display: block; /* Make link take full width of li */
+     padding: 8px 0;
+  }
+
+  .hamburger-menu {
+    display: block; /* Show hamburger on mobile */
+  }
+
+  .desktop-signin {
+    display: none; /* Hide desktop sign in button */
+  }
+
+   .navigation.open .mobile-signin {
+     display: block; /* Show mobile sign in button only when menu is open */
+   }
+
+  .app-header {
+    padding: 15px 20px; /* Adjust padding for mobile */
+  }
+}
